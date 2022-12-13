@@ -1,5 +1,5 @@
 name: release
-on: [create]
+on: [create, workflow_dispatch]
 jobs:
   release:
     runs-on: ubuntu-22.04
