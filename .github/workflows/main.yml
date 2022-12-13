@@ -4,8 +4,9 @@ jobs:
   release:
     runs-on: ubuntu-22.04
     steps:
+      - name: npm install
+        run: npm install
       - name: npm publish
         run: npm publish --access public
-        working-directory: /
         env:
           NODE_AUTH_TOKEN: ${{secrets.NPM_TOKEN}}
