@@ -1,0 +1,11 @@
+name: Adapter Release
+on: [create]
+jobs:
+  release:
+    runs-on: ubuntu-22.04
+    steps:
+      - name: Publish to NPM
+        run: npm publish --access public
+        working-directory: wasm
+        env:
+          NODE_AUTH_TOKEN: ${{secrets.NPM_TOKEN}}
