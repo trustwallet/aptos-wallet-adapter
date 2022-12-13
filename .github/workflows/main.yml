@@ -6,7 +6,9 @@ jobs:
     steps:
       - name: npm install
         run: npm install
+        working-directory: /
       - name: npm publish
         run: npm publish --access public
+        working-directory: /
         env:
           NODE_AUTH_TOKEN: ${{secrets.NPM_TOKEN}}
