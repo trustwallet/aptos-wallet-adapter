@@ -4,9 +4,6 @@ jobs:
   release:
     runs-on: ubuntu-22.04
     steps:
-      - name: npm install
-        run: npm install
-        working-directory: /
       - name: npm publish
         run: npm publish --access public
         working-directory: /
