@@ -6,6 +6,5 @@ jobs:
     steps:
       - name: Publish to NPM
         run: npm publish --access public
-        working-directory: wasm
         env:
           NODE_AUTH_TOKEN: ${{secrets.NPM_TOKEN}}
