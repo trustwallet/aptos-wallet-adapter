@@ -23,7 +23,7 @@ interface TrustWindow extends Window {
 
 declare const window: TrustWindow;
 
-export const TrustWalletName = "Trust" as WalletName<"Trust">;
+export const TrustWalletName = "TrustWallet" as WalletName<"TrustWallet">;
 
 export class TrustWallet implements AdapterPlugin {
   readonly name = TrustWalletName;
