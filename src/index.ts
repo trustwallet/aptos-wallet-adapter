@@ -40,7 +40,7 @@ export class TrustWallet implements AdapterPlugin {
 
   async connect(): Promise<AccountInfo> {
     try {
-      const accountInfo = await this.provider?.connect();
+      const accountInfo = await this.trustwallet?.aptos?.connect();
       if (!accountInfo) throw `${TrustWalletName} Address Info Error`;
       return accountInfo;
     } catch (error: any) {
