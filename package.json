@@ -1,6 +1,6 @@
 {
   "name": "@trustwallet/aptos-wallet-adapter",
-  "version": "0.1.5",
+  "version": "0.1.6",
   "description": "Trust Wallet plugin to use with Aptos Wallet Adapter",
   "author": "Trust Wallet",
   "main": "./dist/index.js",
